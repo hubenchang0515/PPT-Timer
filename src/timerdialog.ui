@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>512</width>
-    <height>66</height>
+    <height>74</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>TimerDialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(135, 206, 250);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -23,6 +26,9 @@
          <pointsize>30</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>00:00</string>
        </property>
@@ -30,11 +36,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="start_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="res.qrc">
          <normaloff>:/res/res/start.png</normaloff>:/res/res/start.png</iconset>
        </property>
        <property name="iconSize">
@@ -47,11 +56,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="pause_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="res.qrc">
          <normaloff>:/res/res/pause.png</normaloff>:/res/res/pause.png</iconset>
        </property>
        <property name="iconSize">
@@ -64,11 +76,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="refresh_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="res.qrc">
          <normaloff>:/res/res/refresh.png</normaloff>:/res/res/refresh.png</iconset>
        </property>
        <property name="iconSize">
@@ -81,11 +96,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="setting_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="res.qrc">
          <normaloff>:/res/res/help.png</normaloff>:/res/res/help.png</iconset>
        </property>
        <property name="iconSize">
@@ -98,11 +116,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="close_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="res.qrc">
          <normaloff>:/res/res/close.png</normaloff>:/res/res/close.png</iconset>
        </property>
        <property name="iconSize">
@@ -118,6 +139,8 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
